@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body id="body">
+    <div class="container" id="container">
+        <form name="cal">
+            <div class="theme">
+                <span class="icon"><i class="bi bi-brightness-high" id="switch"></i>  <i class="bi bi-moon" id="themechange"></i></span>
+               <input type="text" class="input" id="input">
+               <h2 id="answer"></h2>
+            </div>
+          <div class="buttons">
+           <input type="button" class="btn" id="btn" value="0" onclick="writeValue(0)">
+            <input type="button" class="btn" id="calc"  value="=">
+            <input type="button" class="btn cbtn" id="delete"  value="C">
+            <input type="button" class="btn mbtn" value="/" onclick="writeValue('/')">
+            <br>
+            <input type="button" class="btn" id="btn" value="7" onclick="writeValue(7)">
+            <input type="button" class="btn" id="btn" value="8" onclick="writeValue(8)">
+            <input type="button" class="btn" id="btn" value="9" onclick="writeValue(9)">
+            <input type="button" class="btn mbtn" value="+" onclick="writeValue('+')">
+            <br>
+            <input type="button" class="btn" id="btn" value="4" onclick="writeValue(4)">
+            <input type="button" class="btn" id="btn" value="5" onclick="writeValue(5)">
+            <input type="button" class="btn" id="btn" value="6" onclick="writeValue(6)">
+            <input type="button" class="btn mbtn" value="-" onclick="writeValue('-')">
+            <br>
+            <input type="button" class="btn" id="btn" value="1" onclick="writeValue(1)">
+            <input type="button" class="btn" id="btn" value="2" onclick="writeValue(2)">
+            <input type="button" class="btn" id="btn" value="3" onclick="writeValue(3)">
+            <input type="button" class="btn mbtn" value="*" onclick="writeValue('*')">
+            <br>
+          </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
